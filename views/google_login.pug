@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Google platform
+    style
+      include ./style.css
+  body
+    .main
+      h2 Google - let's log in to your account!
+      form(action='http://localhost:3000/google_after_login', method='GET')
+        p
+          | Login:
+          input(type='text', name='first_name')
+        p
+          | Password:
+          input(type='text', name='last_name')
+        input(type='submit', value='Submit')
