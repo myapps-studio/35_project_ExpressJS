@@ -11,13 +11,8 @@ app.get('/google_login', function (req, res) {
 
 // Second view
 
-app.get('/google_after_login', function(req, res){
-    res.render('dynamic', {
-        user: {
-            first_name: req.query.first_name,
-            last_name: req.query.last_name
-        }
-    });
+app.get('/google_after_login', function (req, res) {
+    res.render('google_after_login');
 });
 
 app.listen(3000);
